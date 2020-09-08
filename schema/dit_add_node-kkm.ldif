@@ -1,0 +1,29 @@
+dn: ou=kkm,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: kkm
+
+dn: ou=state,ou=kkm,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: state
+
+dn: ou=district,ou=state,ou=kkm,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: district
+
+dn: ou=primhc,ou=district,ou=state,ou=kkm,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: primhc
+
+dn: ou=clinic,ou=primhc,ou=district,ou=state,ou=kkm,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: clinic 
+
+dn: ou=staff,ou=primhc,ou=district,ou=state,ou=kkm,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: staff

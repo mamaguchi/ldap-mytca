@@ -1,0 +1,6 @@
+dn: cn=mydyngrp,ou=groups,dc=example,dc=com
+cn: mydyngrp
+objectClass: top
+objectClass: groupOfURLs
+ou: groups
+memberURL: ldap:///ou=People,dc=example,dc=com??sub?staffName=mamaguchi

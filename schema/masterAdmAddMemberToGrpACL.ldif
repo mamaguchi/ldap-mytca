@@ -1,0 +1,4 @@
+dn: ou=People,dc=example,dc=com
+changetype: modify
+add: aci
+aci: (target="ldap:///staffId=*,ou=People,dc=example,dc=com")(targattrfilters="add=groupUid:(groupUid=db1986de-3e16-41de-aea3-c67c01a5b828),del=groupUid:(groupUid=db1986de-3e16-41de-aea3-c67c01a5b828)")(version 3.0; acl "Group owner can add/delete members to the group"; allow(add,delete,write) (userdn="ldap:///staffId=880601105149,ou=People,dc=example,dc=com") AND (groupdn="ldap:///cn=masterAdm,ou=groups,dc=example,dc=com");)

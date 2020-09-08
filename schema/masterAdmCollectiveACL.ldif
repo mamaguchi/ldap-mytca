@@ -1,0 +1,8 @@
+dn: ou=groups,dc=example,dc=com
+changetype: modify
+add: aci
+aci: (target="ldap:///ou=mytcaGroup,ou=groups,dc=example,dc=com")(targetattr="*")(version 3.0; acl "Master admin can create groups under mytcaGroup"; allow(add) groupdn="ldap:///cn=masterAdm,ou=groups,dc=example,dc=com";)
+-
+add: aci
+aci: (target="ldap:///ou=mytcaGroup,ou=groups,dc=example,dc=com")(version 3.0; acl "Group owner can delete groups under mytcaGroup"; allow(delete)(userattr="owner#USERDN");)
+

@@ -1,0 +1,5 @@
+dn: ou=patient,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: patient
+
